@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem Apego Brechó | Moda Sustentável e Curadoria</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração de Cores Vibrantes (Neo-Brutalismo) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pop-pink': '#FF2A75',
+                        'pop-yellow': '#FFD600',
+                        'pop-blue': '#4361EE',
+                        'pop-green': '#06D6A0',
+                        'pop-dark': '#111111',
+                        'pop-light': '#F4F0EA',
+                    },
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        marker: ['Permanent Marker', 'cursive'],
+                    },
+                    boxShadow: {
+                        'brutal': '6px 6px 0px 0px rgba(17,17,17,1)',
+                        'brutal-hover': '2px 2px 0px 0px rgba(17,17,17,1)',
+                        'brutal-lg': '10px 10px 0px 0px rgba(17,17,17,1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { background-color: #F4F0EA; }
+        
+        /* Animação de letreiro (Marquee) */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Efeito Brutalista em botões */
+        .btn-brutal {
+            transition: all 0.2s ease;
+        }
+        .btn-brutal:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 2px 2px 0px 0px rgba(17,17,17,1) !important;
+        }
+        .btn-brutal:active {
+            transform: translate(6px, 6px);
+            box-shadow: 0px 0px 0px 0px rgba(17,17,17,1) !important;
+        }
+    </style>
+</head>
+<body class="text-pop-dark font-body antialiased selection:bg-pop-pink selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-pop-light border-b-4 border-pop-dark transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="relative block py-1 pr-6 group mt-2">
+                        <div class="font-display text-2xl sm:text-3xl font-bold tracking-tighter uppercase relative z-10 group-hover:-translate-y-1 transition-transform duration-300 text-pop-dark">
+                            Sem Apego
+                        </div>
+                        <div class="font-marker text-pop-pink text-2xl absolute -bottom-3 right-0 transform -rotate-12 group-hover:rotate-[-4deg] transition-transform duration-300 z-20 [text-shadow:2px_2px_0px_#111]">
+                            brechó
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Links Desktop -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#proposito" class="text-pop-dark hover:text-pop-pink font-bold uppercase tracking-wider text-sm transition-colors">O Propósito</a>
+                    <a href="#como-funciona" class="text-pop-dark hover:text-pop-blue font-bold uppercase tracking-wider text-sm transition-colors">Como Comprar</a>
+                    
+                    <!-- Redes Sociais -->
+                    <div class="flex items-center space-x-4 border-l-2 pl-4 border-pop-dark">
+                        <a href="https://instagram.com/sem_apego_brecho" target="_blank" class="w-10 h-10 rounded-full border-2 border-pop-dark flex items-center justify-center hover:bg-pop-pink hover:text-white transition-colors bg-white shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://wa.me/553194971034?text=Olá!" target="_blank" class="w-10 h-10 rounded-full border-2 border-pop-dark flex items-center justify-center hover:bg-pop-green hover:text-white transition-colors bg-white shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Texto Hero -->
+                <div class="order-2 lg:order-1">
+                    <div class="inline-block px-4 py-2 bg-pop-yellow border-2 border-pop-dark rounded-full font-bold uppercase text-xs sm:text-sm mb-6 shadow-[2px_2px_0px_0px_rgba(17,17,17,1)] transform -rotate-2">
+                        ♻️ Moda Circular & Consciente
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-display font-bold leading-[1.1] mb-6 uppercase">
+                        Seu Novo <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pop-pink to-pop-blue" style="-webkit-text-stroke: 2px #111;">Luxo é</span> <br>
+                        Sustentável.
+                    </h1>
+                    <p class="text-xl mb-8 font-medium max-w-lg border-l-4 border-pop-pink pl-4">
+                        Curadoria impecável de peças únicas. Vista-se bem, gaste menos e ajude o planeta.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                        <a href="#catalogo" class="btn-brutal inline-flex justify-center items-center px-8 py-4 bg-pop-pink border-4 border-pop-dark text-white font-display font-bold text-lg uppercase shadow-brutal w-full sm:w-auto text-center">
+                            Ver Catálogo <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="https://wa.me/553194971034?text=Olá!%20Vim%20pelo%20site." target="_blank" class="btn-brutal inline-flex justify-center items-center px-8 py-4 bg-white border-4 border-pop-dark text-pop-dark font-display font-bold text-lg uppercase shadow-brutal w-full sm:w-auto text-center">
+                            <i class="fa-brands fa-whatsapp mr-2 text-2xl text-pop-green"></i> Fale Conosco
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagem Hero / Carrossel -->
+                <div class="order-1 lg:order-2 relative">
+                    <!-- Elementos decorativos -->
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-pop-yellow rounded-full border-4 border-pop-dark z-0"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-pop-blue rounded-full border-4 border-pop-dark z-0"></div>
+                    
+                    <div class="relative z-10 border-4 border-pop-dark shadow-brutal-lg bg-white p-2 transform rotate-1 hover:rotate-0 transition-transform duration-300 group">
+                        
+                        <!-- Selo Fixo -->
+                        <div class="absolute z-20 top-4 left-4 bg-pop-green text-pop-dark border-2 border-pop-dark px-3 py-1 font-bold uppercase transform -rotate-6 shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">
+                            Qualidade Premium
+                        </div>
+
+                        <!-- Container do Carrossel -->
+                        <div class="relative overflow-hidden w-full aspect-[4/5] sm:aspect-square">
+                            <div id="hero-carousel" class="flex transition-transform duration-500 ease-out h-full w-full">
+                                <!-- Slides -->
+                                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80" alt="Cabides e roupas" class="w-full h-full object-cover flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500" />
+                                <img src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=800&q=80" alt="Roupa de Criança" class="w-full h-full object-cover flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500" />
+                                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80" alt="Vestido Casual" class="w-full h-full object-cover flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500" />
+                                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80" alt="Jaqueta" class="w-full h-full object-cover flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500" />
+                                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Acessórios e Sapatos" class="w-full h-full object-cover flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500" />
+                            </div>
+
+                            <!-- Botões de Navegação -->
+                            <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white border-2 border-pop-dark rounded-full flex items-center justify-center hover:bg-pop-yellow transition-colors shadow-[2px_2px_0px_0px_rgba(17,17,17,1)] active:translate-y-[calc(-50%+2px)] active:shadow-none z-20">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white border-2 border-pop-dark rounded-full flex items-center justify-center hover:bg-pop-yellow transition-colors shadow-[2px_2px_0px_0px_rgba(17,17,17,1)] active:translate-y-[calc(-50%+2px)] active:shadow-none z-20">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+
+                            <!-- Indicadores (Bolinhas) -->
+                            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20" id="carousel-dots">
+                                <!-- Preenchido via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-pop-dark text-white py-4 border-y-4 border-pop-dark marquee-container overflow-hidden flex items-center">
+        <div class="marquee-content font-display font-bold text-xl sm:text-2xl uppercase tracking-widest flex whitespace-nowrap">
+            <span class="mx-4 text-pop-pink">✦</span> CURADORIA RIGOROSA 
+            <span class="mx-4 text-pop-yellow">✦</span> QUALIDADE IMPECÁVEL 
+            <span class="mx-4 text-pop-green">✦</span> RESPONSABILIDADE AMBIENTAL 
+            <span class="mx-4 text-pop-blue">✦</span> MODA COM PROPÓSITO
+            <span class="mx-4 text-pop-pink">✦</span> CURADORIA RIGOROSA 
+            <span class="mx-4 text-pop-yellow">✦</span> QUALIDADE IMPECÁVEL 
+            <span class="mx-4 text-pop-green">✦</span> RESPONSABILIDADE AMBIENTAL 
+            <span class="mx-4 text-pop-blue">✦</span> MODA COM PROPÓSITO
+        </div>
+    </div>
+
+    <section id="proposito" class="py-24 bg-white border-b-4 border-pop-dark relative">
+        <!-- Padrão de fundo (bolinhas) -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#111 2px, transparent 2px); background-size: 30px 30px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl md:text-5xl font-display font-bold uppercase mb-4 text-pop-dark">O Brechó Reinventado</h2>
+                <p class="text-xl font-medium text-gray-600">Esqueça a bagunça. Aqui você encontra padrão de loja nova com alma de moda circular.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-pop-yellow border-4 border-pop-dark p-8 shadow-brutal transform hover:-translate-y-2 transition-transform">
+                    <div class="w-16 h-16 bg-white border-4 border-pop-dark rounded-full flex items-center justify-center mb-6 text-3xl shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">
+                        💎
+                    </div>
+                    <h3 class="text-2xl font-display font-bold uppercase mb-3">Curadoria Rigorosa</h3>
+                    <p class="font-medium">Seleção criteriosa de estilo, tecido e tendência. Encontre apenas o que há de melhor, pronto para usar.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-pop-pink text-white border-4 border-pop-dark p-8 shadow-brutal transform hover:-translate-y-2 transition-transform">
+                    <div class="w-16 h-16 bg-white border-4 border-pop-dark text-pop-dark rounded-full flex items-center justify-center mb-6 text-3xl shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">
+                        ✨
+                    </div>
+                    <h3 class="text-2xl font-display font-bold uppercase mb-3">Qualidade Top</h3>
+                    <p class="font-medium text-white/90">Peças higienizadas, inspecionadas e impecáveis. Como novas, mas com muito mais história pra contar.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-pop-green border-4 border-pop-dark p-8 shadow-brutal transform hover:-translate-y-2 transition-transform">
+                    <div class="w-16 h-16 bg-white border-4 border-pop-dark rounded-full flex items-center justify-center mb-6 text-3xl shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">
+                        🌍
+                    </div>
+                    <h3 class="text-2xl font-display font-bold uppercase mb-3">Impacto Real</h3>
+                    <p class="font-medium">A moda circular reduz carbono e água. Comprar no Sem Apego é um ato de amor ao seu estilo e ao planeta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="py-24 bg-pop-blue text-white border-b-4 border-pop-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="bg-pop-dark text-white px-4 py-1 font-bold uppercase text-sm border-2 border-white mb-4 inline-block">Manual do Cliente</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold uppercase">Como Comprar?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Passo 1 -->
+                <div class="bg-white text-pop-dark border-4 border-pop-dark p-6 shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)] relative mt-8">
+                    <div class="absolute -top-8 -left-4 w-16 h-16 bg-pop-yellow border-4 border-pop-dark rounded-full flex items-center justify-center font-display font-bold text-3xl shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">1</div>
+                    <i class="fa-solid fa-gem text-3xl mb-4 text-pop-pink block mt-4"></i>
+                    <h4 class="font-display font-bold text-xl uppercase mb-2">Escolha</h4>
+                    <p class="font-medium text-sm">Navegue pelo nosso Instagram ou catálogo e print as peças que amou.</p>
+                </div>
+                
+                <!-- Passo 2 -->
+                <div class="bg-white text-pop-dark border-4 border-pop-dark p-6 shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)] relative mt-8">
+                    <div class="absolute -top-8 -left-4 w-16 h-16 bg-pop-green border-4 border-pop-dark rounded-full flex items-center justify-center font-display font-bold text-3xl shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">2</div>
+                    <i class="fa-brands fa-whatsapp text-3xl mb-4 text-green-500 block mt-4"></i>
+                    <h4 class="font-display font-bold text-xl uppercase mb-2">Chame no Whats</h4>
+                    <p class="font-medium text-sm">Mande as fotos para o nosso número (31) 9497-1034 para confirmar a disponibilidade.</p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="bg-white text-pop-dark border-4 border-pop-dark p-6 shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)] relative mt-8">
+                    <div class="absolute -top-8 -left-4 w-16 h-16 bg-pop-pink text-white border-4 border-pop-dark rounded-full flex items-center justify-center font-display font-bold text-3xl shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">3</div>
+                    <i class="fa-solid fa-money-bill-wave text-3xl mb-4 text-pop-blue block mt-4"></i>
+                    <h4 class="font-display font-bold text-xl uppercase mb-2">Pagamento</h4>
+                    <p class="font-medium text-sm">Aceitamos <strong>PIX</strong> ou enviamos o <strong>Link do Mercado Pago</strong> pelo atendimento.</p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="bg-white text-pop-dark border-4 border-pop-dark p-6 shadow-[6px_6px_0px_0px_rgba(255,255,255,0.5)] relative mt-8">
+                    <div class="absolute -top-8 -left-4 w-16 h-16 bg-white border-4 border-pop-dark rounded-full flex items-center justify-center font-display font-bold text-3xl shadow-[2px_2px_0px_0px_rgba(17,17,17,1)]">4</div>
+                    <i class="fa-brands fa-uber text-3xl mb-4 text-pop-dark block mt-4"></i>
+                    <h4 class="font-display font-bold text-xl uppercase mb-2">Uber Flash</h4>
+                    <p class="font-medium text-sm">O envio é feito via <strong>Uber Flash</strong>. A contratação e o pagamento da corrida são feitos por você!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="py-24 bg-pop-light border-b-4 border-pop-dark">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="bg-pop-yellow border-4 border-pop-dark p-10 sm:p-16 shadow-brutal-lg relative overflow-hidden">
+                <!-- Decorativo -->
+                <i class="fa-solid fa-star absolute -top-4 -right-4 text-8xl text-white opacity-40 transform rotate-12"></i>
+                
+                <h2 class="text-4xl md:text-5xl font-display font-bold uppercase mb-6 relative z-10">Bora Garimpar?</h2>
+                <p class="text-xl font-medium mb-10 max-w-2xl mx-auto relative z-10">
+                    Nosso catálogo oficial está no forno. Por enquanto, as novidades mais quentes estão rodando lá no nosso Instagram.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+                    <button onclick="alert('Logo logo nosso catálogo oficial estará no ar! Por enquanto, acompanhe o Instagram ou mande mensagem no Whats.')" class="btn-brutal px-8 py-4 bg-pop-dark text-white font-display font-bold text-lg uppercase border-4 border-pop-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+                        Acessar Catálogo (Em Breve)
+                    </button>
+                    <a href="https://instagram.com/sem_apego_brecho" target="_blank" class="btn-brutal px-8 py-4 bg-white text-pop-pink font-display font-bold text-lg uppercase border-4 border-pop-dark shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] flex items-center justify-center">
+                        <i class="fa-brands fa-instagram mr-2 text-2xl"></i> Ver no Instagram
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-pop-dark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 border-b-4 border-white/20 pb-12 mb-8">
+                
+                <div class="md:col-span-5">
+                    <div class="relative inline-block mb-6 mt-2">
+                        <h3 class="text-4xl font-display font-bold uppercase relative z-10">Sem Apego</h3>
+                        <div class="font-marker text-pop-yellow text-3xl absolute -bottom-4 -right-4 transform -rotate-12 z-20 [text-shadow:2px_2px_0px_#111]">
+                            brechó
+                        </div>
+                    </div>
+                    <p class="text-gray-400 font-medium max-w-sm text-lg">Moda circular com curadoria impecável. Porque estilo de verdade não prejudica o planeta.</p>
+                </div>
+                
+                <div class="md:col-span-3">
+                    <h4 class="font-display font-bold uppercase text-xl mb-6 text-pop-yellow">Contatos</h4>
+                    <ul class="space-y-4 font-medium">
+                        <li>
+                            <a href="https://wa.me/553194971034?text=Olá!" target="_blank" class="flex items-center hover:text-pop-green transition-colors">
+                                <i class="fa-brands fa-whatsapp text-2xl mr-3"></i> (31) 9497-1034
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/sem_apego_brecho" target="_blank" class="flex items-center hover:text-pop-pink transition-colors">
+                                <i class="fa-brands fa-instagram text-2xl mr-3"></i> @sem_apego_brecho
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="md:col-span-4">
+                    <h4 class="font-display font-bold uppercase text-xl mb-6 text-pop-blue">Informações Úteis</h4>
+                    <ul class="space-y-3 font-medium text-gray-400">
+                        <li class="flex items-start">
+                            <span class="text-pop-green mr-2">✔</span> Pagamento: PIX ou Mercado Pago
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pop-green mr-2">✔</span> Entrega: Uber Flash (contratado pelo cliente)
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-pop-green mr-2">✔</span> Roupas higienizadas prontas pra uso
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <p>&copy; 2023 Sem Apego Brechó.</p>
+                <p class="mt-4 md:mt-0">Design feito com <i class="fa-solid fa-bolt text-pop-yellow mx-1"></i> e propósito.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/553194971034?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." target="_blank" class="fixed bottom-6 right-6 bg-pop-green text-pop-dark w-16 h-16 rounded-full flex items-center justify-center text-4xl border-4 border-pop-dark shadow-brutal hover:scale-110 transition-transform duration-300 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Lógica do Carrossel -->
+    <script>
+        const track = document.getElementById('hero-carousel');
+        const slides = track.querySelectorAll('img');
+        const dotsContainer = document.getElementById('carousel-dots');
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        let autoPlayInterval;
+
+        // Criar bolinhas indicadoras
+        slides.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.className = `w-3 h-3 rounded-full border-2 border-pop-dark transition-colors ${index === 0 ? 'bg-pop-pink' : 'bg-white'}`;
+            dot.onclick = () => {
+                goToSlide(index);
+                resetAutoPlay();
+            };
+            dotsContainer.appendChild(dot);
+        });
+
+        const updateDots = () => {
+            Array.from(dotsContainer.children).forEach((dot, index) => {
+                if(index === currentIndex) {
+                    dot.classList.remove('bg-white');
+                    dot.classList.add('bg-pop-pink');
+                } else {
+                    dot.classList.add('bg-white');
+                    dot.classList.remove('bg-pop-pink');
+                }
+            });
+        }
+
+        function updateSlidePosition() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlidePosition();
+            resetAutoPlay();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+            resetAutoPlay();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlidePosition();
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlidePosition();
+            }, 4000); // Muda a foto a cada 4 segundos
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+
+        // Inicia a reprodução automática
+        startAutoPlay();
+    </script>
+</body>
+</html>
